@@ -15,6 +15,8 @@ Nesse exercício, escolha pelo menos 3 das 4 perguntas abaixo e as responda no s
 
 Use como ponto de partida o Notebook `reports/exploracao.Rmd`. Não copie as perguntas tal como estão aqui no seu relatório. Use títulos e texto para criar um relatório que possa ser compreendido por alguém que não está no curso e que não pareça um dever de casa de um livro texto :). Coloque no início do documento uma frase dizendo os números das questões que você respondeu. Mas me ajude colocando em negrito no relatório os trechos com suas conclusões para cada pergunta.
 
+Importante: sempre que for programar no RStudio, abra o arquivo do projeto (`l1p1.Rproj`) na raiz do repositório. Isso abre o projeto com o diretório de trabalho correto, e facilita sua vida.
+
 Ao examinar os dados, lembre de procurar padrões e comentar as distribuições de valores. A resposta sobre como chove nas 3 cidades por exemplo poderia comentar tanto que a cidade X é aquela que tem semanas com maiores chuvas quanto que essa mesmas cidade tem mais semanas sem chuva. 
 
 Atenção para dados faltantes. É importante saber o que temos e o que não temos na hora de tirar conclusões.
