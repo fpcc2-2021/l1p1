@@ -26,12 +26,12 @@ Mande dúvidas à vontade nos canais públicos do slack. Assim todos nos ajudamo
 
 ## Submissão
 
-Você deve submeter 2 coisas: 
+Há dois resultados desse exercício que serão avaliados:
 
-* Um pull-request do seu repositório para o repositório original da tarefa
-* O link do seu relatório [publicado no rpubs](https://rpubs.com/about/getting-started) deve ser enviado no google classroom
+* O código que está no seu repositório no final do prazo
+* O link do seu relatório [em html publicado no rpubs](https://rpubs.com/about/getting-started) que deve ser enviado no google classroom.
 
-Repare que para fazer o pull request seu .Rmd deve estar no repositório. Você não precisa subir o html ou o .nb.html para seu repositório. 
+Repare que o código não precisa ser submetido. Basta deixá-lo atualizado. 
 
 ## Os dados
 
