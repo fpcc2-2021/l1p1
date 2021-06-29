@@ -5,7 +5,7 @@ João Pessoa, Campina Grande e Patos são 3 referências para entender o clima n
 ## As perguntas
 Nesse exercício, escolha pelo menos 3 das 4 perguntas abaixo e as responda no seu relatório:
 
-1. Como foi o vento nessas 3 cidades no ano que já analisei (2019)? Compare os valores de vento médio nas 3 cidades nesse ano. Como isso complementa a imagem que já temos de como foi o clima em 2019 nessas cidades?
+1. Como foi o vento nessas 3 cidades no ano que já analisei (2019)? Compare os valores de vento por semana (a coluna vento médio) nas 3 cidades nesse ano. Como isso complementa a imagem que já temos de como foi o clima em 2019 nessas cidades?
 1. Considerando apenas o período de janeiro e fevereiro, como varia o calor das 3 cidades nos últimos anos? Aqui, ao me referir a calor estou imaginando a maior temperatura experienciada pelas pessoas em cada semana.
 1. Como a umidade das 3 cidades variou ao longo de 2019? Escolha uma cidade e comente como 2019 se compara com a variação considerando todas as semanas dos últimos 10 anos. O que isso nos diz sobre 2019 nessa cidade?
 1. Como você compararia a temperatura em junho nas 3 cidades? Como você poderia descrever a temperatura das festas juninas das 3 cidades a partir disso?
