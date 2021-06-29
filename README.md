@@ -1,28 +1,33 @@
 # EDA no clima de João Pessoa, Campina Grande e Patos
 
-João Pessoa, Campina Grande e Patos são 3 referências para entender o clima na Paraíba. A primeira cidade está no litoral, a segunda próximo ao topo da Serra da Borborema, e a terceira no Sertão. Nesse exercício, você experimentará com o processo de análise exploratória dos dados usando dados dessas 3 cidades. O resultado será um relatório em RMarkdowne publicado (instruções para publicar mais abaixo).
+João Pessoa, Campina Grande e Patos são 3 referências para entender o clima na Paraíba. A primeira cidade está no litoral, a segunda próximo ao topo da Serra da Borborema, e a terceira no Sertão. Nesse exercício, você experimentará com o processo de análise exploratória dos dados usando dados dessas 3 cidades. O resultado será um relatório em RMarkdown e publicado online (instruções para publicar mais abaixo).
 
 ## As perguntas
-Nesse exercício, escolha pelo menos 3 das 4 perguntas abaixo e as responda no seu relatório:
+Nesse exercício, escolha pelo menos 2 das 4 perguntas abaixo e as responda no seu relatório:
 
-1. Como foi o vento nessas 3 cidades no ano que já analisei (2019)? Compare os valores de vento por semana (a coluna vento médio) nas 3 cidades nesse ano. Como isso complementa a imagem que já temos de como foi o clima em 2019 nessas cidades?
-1. Considerando apenas o período de janeiro e fevereiro, como varia o calor das 3 cidades nos últimos anos? Aqui, ao me referir a calor estou imaginando a maior temperatura experienciada pelas pessoas em cada semana.
-1. Como a umidade das 3 cidades variou ao longo de 2019? Escolha uma cidade e comente como 2019 se compara com a variação considerando todas as semanas dos últimos 10 anos. O que isso nos diz sobre 2019 nessa cidade?
-1. Como você compararia a temperatura em junho nas 3 cidades? Como você poderia descrever a temperatura das festas juninas das 3 cidades a partir disso?
+1. Como foi o vento nessas 3 cidades no ano que já analisei (2019)? Como isso complementa a imagem que já temos de como foi o clima em 2019 nessas cidades?
+1. Considerando apenas as semanas no período de janeiro e fevereiro (pico do verão), como foi o calor das 3 cidades nos últimos anos?
+1. Como a umidade das 3 cidades varia ao longo do ano? 
+1. Como você descreveria a temperatura das festas juninas das 3 cidades nos últimos anos?
 
 
 ## Instruções 
 
-Use como ponto de partida o Notebook `reports/exploracao.Rmd`. Não copie as perguntas tal como estão aqui no seu relatório. Use títulos e texto para criar um relatório que possa ser compreendido por alguém que não está no curso e que não pareça um dever de casa de um livro texto :). Coloque no início do documento uma frase dizendo os números das questões que você respondeu. Mas me ajude colocando em negrito no relatório os trechos com suas conclusões para cada pergunta.
+Use como ponto de partida o Notebook `reports/exploracao.Rmd`. Coloque no início do documento uma frase dizendo os números das questões que você respondeu, mas não copie as perguntas tal como estão aqui no seu relatório. Use títulos e texto para criar um relatório que possa ser compreendido por alguém que não está no curso e que não pareça um dever de casa de um livro texto :).  Mas me ajude colocando em negrito no relatório os trechos com suas conclusões para cada pergunta.
 
 Importante: sempre que for programar no RStudio, abra o arquivo do projeto (`l1p1.Rproj`) na raiz do repositório. Isso abre o projeto com o diretório de trabalho correto, e facilita sua vida.
 
-Ao examinar os dados, lembre de procurar padrões e comentar as distribuições de valores. A resposta sobre como chove nas 3 cidades por exemplo poderia comentar tanto que a cidade X é aquela que tem semanas com maiores chuvas quanto que essa mesmas cidade tem mais semanas sem chuva. 
+### Lembre que
+
+> A estrutura que você seguirá para cada pergunta é: (1) formular uma pergunta, (2) dizer que dados usará para responder a pergunta -- se você filtrará, transformará, etc.os originais, (3) mostrar alguma visão construída com esses dados -- geralmente uma visualização e (4) interpretar com um ou dois parágrafos de texto essa evidência.
+
+Além disso, esse é um exercício sobre descrição de distribuições de valores. Não queremos agora falar em média, mediana, nada disso. Queremos descrever distribuições de valores. Use os conceitos de faixa de valores, concentração, simetria, pontos extremos e cauda para descrever cada distribuiçào que você usar. No fim, a resposta sobre como chove nas 3 cidades por exemplo poderia comentar tanto que a cidade X é aquela que tem semanas com maiores chuvas quanto que essa mesmas cidade tem mais semanas sem chuva. 
+
+Sendo um exercício sobre distribuições, exercite o uso de gráficos de pontos, histogramas e gráficos de densidade. Você pode usar gráficos de linha do tempo (colocando o tempo em um eixo), mas não use apenas ele para nenhuma pergunta.
 
 Atenção para dados faltantes. É importante saber o que temos e o que não temos na hora de tirar conclusões.
 
 Mande dúvidas à vontade nos canais públicos do slack. Assim todos nos ajudamos.
-
 
 ## Submissão
 
@@ -37,7 +42,7 @@ Repare que o código não precisa ser submetido. Basta deixá-lo atualizado.
 
 Dados vêm do BDMEP: https://tempo.inmet.gov.br/ . Selecionei lá a estação convencional em João Pessoa, Campina Grande e Patos - PB, e baixei os csvs com dados desde 2010. 
 
-Os dados brutos estão em `data/raw`. O código em `transform` faz ETL e o coloca em `data/`.
+Os dados brutos estão em `data/raw`. O código em `transform` faz ETL e o coloca em `data/`. Você não usará os dados raw, mas é bom saber de onde eles vêm.
 
 No processo de ETL, calculamos as variáveis de interesse por semana. Isso porque há bastante medições vazias nas estações, e queremos deixar o dado mais fácil de ser trabalhado. Mas ainda há várias semanas onde alguma ou todas as medidas são NA.
 
