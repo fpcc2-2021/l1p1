@@ -34,19 +34,6 @@ juntas = bind_rows(
     .id = "cidade"
 )
 
-# Data = col_character(),
-# `Hora (UTC)` = col_character(),
-# `Temp. [Hora] (C)` = col_number(),
-# `Umi. (%)` = col_number(),
-# `Pressao (hPa)` = col_number(),
-# `Vel. Vento (m/s)` = col_character(),
-# `Dir. Vento (m/s)` = col_number(),
-# `Nebulosidade (Decimos)` = col_character(),
-# `Insolacao (h)` = col_character(),
-# `Temp. Max. [Diaria] (h)` = col_number(),
-# `Temp. Min. [Diaria] (h)` = col_number(),
-# `Chuva [Diaria] (mm)` = col_character(),
-
 adaptado = juntas %>%
     mutate(semana = lubridate::floor_date(Data, unit= "weeks")) %>% 
     group_by(cidade, semana) %>% 
@@ -67,6 +54,3 @@ adaptado = juntas %>%
 adaptado %>%
     write_csv(here::here("data/tempo-jp-cg-pt.csv"))
 
-adaptado %>% 
-    filter(lubridate::year(semana) == 2019) %>% 
-    write_csv(here::here("data/tempo-jp-cg-pt-2019.csv"))
